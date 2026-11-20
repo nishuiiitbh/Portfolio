@@ -1,9 +1,11 @@
+
 .main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 100%;
   min-height: 100vh;
@@ -12,7 +14,11 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: linear-gradient(180deg, rgba(26, 26, 26, 0.58), rgba(26, 26, 26, 0.78)),
+  background: linear-gradient(
+      180deg,
+      rgba(26, 26, 26, 0.58),
+      rgba(26, 26, 26, 0.78)
+    ),
     url("../../assets/images/landing.png") center center / cover no-repeat;
 }
 
@@ -37,6 +43,7 @@
   flex: 1;
   margin-bottom: 30px;
 }
+
 .button-greeting-div {
   display: flex;
   margin-top: 20px;
@@ -82,7 +89,12 @@
   position: absolute;
   inset: 12%;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 193, 7, 0.24) 0%, rgba(255, 193, 7, 0.1) 36%, rgba(26, 26, 26, 0) 72%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 193, 7, 0.24) 0%,
+    rgba(255, 193, 7, 0.1) 36%,
+    rgba(26, 26, 26, 0) 72%
+  );
   filter: blur(16px);
   z-index: -1;
 }
@@ -94,37 +106,56 @@
   border-radius: 24px;
 }
 
+/* Projects and Resume Buttons */
+.portfolio-repo-btn-div {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 18px;
+}
+
+.portfolio-repo-btn-div + .portfolio-repo-btn-div {
+  margin-top: 14px;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
   }
+
   .greeting-text-p {
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
   }
+
   .greet-main {
     min-height: auto;
     background-position: center;
   }
+
   .greeting-main {
     flex-direction: column;
     min-height: auto;
     padding: 6rem 1.2rem 3rem;
     text-align: center;
   }
+
   .greeting-text {
     font-size: 30px;
     text-align: center;
   }
+
   .greeting-nickname {
     font-size: 25px;
     text-align: center;
   }
+
   .greeting-text-p {
     font-size: 16px;
     margin-right: 0px;
@@ -137,6 +168,7 @@
     display: flex;
     justify-content: center;
   }
+
   .greeting-image-div img {
     width: min(88vw, 420px);
   }
