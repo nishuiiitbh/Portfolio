@@ -1,3 +1,4 @@
+
 import React, { Component } from "react";
 import "./Skills.css";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
@@ -33,19 +34,24 @@ function GetSkillSvg(props) {
         style={{ width: "100%", maxWidth: "600px", height: "auto" }}
       />
     );
+
   return <DesignImg theme={props.theme} />;
 }
 
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
+
     return (
       <div>
         {skills.data.map((skill, i) => {
           const isEven = i % 2 === 0;
 
           const imageDiv = (
-            <Fade {...(isEven ? { left: true } : { right: true })} duration={2000}>
+            <Fade
+              {...(isEven ? { left: true } : { right: true })}
+              duration={2000}
+            >
               <div className="skills-image-div">
                 <GetSkillSvg fileName={skill.fileName} theme={theme} />
               </div>
@@ -54,27 +60,60 @@ class SkillSection extends Component {
 
           const textDiv = (
             <div className="skills-text-div">
-              <Fade {...(isEven ? { right: true } : { left: true })} duration={1000}>
-                <h1 className="skills-heading" style={{ color: theme.text }}>
+              <Fade
+                {...(isEven ? { right: true } : { left: true })}
+                duration={1000}
+              >
+                <h1
+                  className="skills-heading"
+                  style={{ color: theme.text }}
+                >
                   {skill.title}
                 </h1>
               </Fade>
-              <Fade {...(isEven ? { right: true } : { left: true })} duration={1500}>
-                <SoftwareSkill logos={skill.softwareSkills} />
-              </Fade>
-              <Fade {...(isEven ? { right: true } : { left: true })} duration={2000}>
-                <div>
-                  {skill.skills.map((skillSentence, j) => {
-                    return (
-                      <p
-                        key={j}
-                        className="subTitle skills-text"
-                        style={{ color: theme.secondaryText }}
+
+              <Fade
+                {...(isEven ? { right: true } : { left: true })}
+                duration={1500}
+              >
+                {skill.title === "Coding Platforms" ? (
+                  <div className="coding-platforms">
+                    {skill.softwareSkills.map((logo) => (
+                      <a
+                        key={logo.skillName}
+                        href={logo.profileLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="coding-platform-link"
+                        style={{
+                          color: logo.style.color,
+                          borderColor: logo.style.color,
+                        }}
                       >
-                        {skillSentence}
-                      </p>
-                    );
-                  })}
+                        {logo.skillName}
+                        <span className="platform-arrow"> ↗</span>
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <SoftwareSkill logos={skill.softwareSkills} />
+                )}
+              </Fade>
+
+              <Fade
+                {...(isEven ? { right: true } : { left: true })}
+                duration={2000}
+              >
+                <div>
+                  {skill.skills.map((skillSentence, j) => (
+                    <p
+                      key={j}
+                      className="subTitle skills-text"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {skillSentence}
+                    </p>
+                  ))}
                 </div>
               </Fade>
             </div>

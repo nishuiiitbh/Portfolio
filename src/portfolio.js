@@ -77,7 +77,6 @@ const skills = {
         },
       ],
     },
-
     {
       title: "Frontend",
       fileName: "ProgrammingImg",
@@ -116,7 +115,6 @@ const skills = {
         },
       ],
     },
-
     {
       title: "Backend",
       fileName: "BackendImg",
@@ -150,7 +148,6 @@ const skills = {
         },
       ],
     },
-
     {
       title: "Databases",
       fileName: "DatabaseImg",
@@ -167,7 +164,6 @@ const skills = {
         },
       ],
     },
-
     {
       title: "Cloud and DevOps",
       fileName: "CloudImg",
@@ -194,7 +190,6 @@ const skills = {
         },
       ],
     },
-
     {
       title: "Tools and Integrations",
       fileName: "ToolsImg",
@@ -227,7 +222,35 @@ const skills = {
         },
       ],
     },
+   {
+  title: "Coding Platforms",
+  fileName: "ProgrammingImg",
+  skills: [
 
+    "⚡ slved more than 500 DSA problems",
+    "⚡ Solved 225+ problems on LeetCode and achieved a maximum contest rating of 1682",
+    "⚡ Practiced 175+ coding problems on GeeksforGeeks",
+    "⚡ Achieved a 2-Star rating with a maximum rating of 1483 on CodeChef and solved 100+ problems",
+  ],
+
+      softwareSkills: [
+        {
+          skillName: "LeetCode",
+          profileLink: "https://leetcode.com/u/nishuiiitbh/",
+          style: { color: "#FFA116" },
+        },
+        {
+          skillName: "GeeksforGeeks",
+          profileLink: "https://www.geeksforgeeks.org/profile/kumarinisnu7y",
+          style: { color: "#2F8D46" },
+        },
+        {
+          skillName: "CodeChef",
+          profileLink: "https://www.codechef.com/users/nishu2604",
+          style: { color: "#B58A45" },
+        },
+      ],
+    },
     {
       title: "CS Fundamentals",
       fileName: "ProgrammingImg",
@@ -239,7 +262,6 @@ const skills = {
       ],
       softwareSkills: [],
     },
-
     {
       title: "Professional Skills",
       fileName: "ProgrammingImg",
@@ -255,9 +277,25 @@ const skills = {
   ],
 };
 
-// Competitive Programming Profiles
+// Competitive Programming Profiles (legacy data)
 const competitiveSites = {
-  competitiveSites: [],
+  competitiveSites: [
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      profileLink: "https://leetcode.com/u/nishuiiitbh/",
+    },
+    {
+      siteName: "GeeksforGeeks",
+      iconifyClassname: "simple-icons:geeksforgeeks",
+      profileLink: "https://www.geeksforgeeks.org/profile/kumarinisnu7y",
+    },
+    {
+      siteName: "CodeChef",
+      iconifyClassname: "simple-icons:codechef",
+      profileLink: "https://www.codechef.com/users/nishu2604",
+    },
+  ],
 };
 
 // Education Page
@@ -316,7 +354,6 @@ const experience = {
   description:
     "I enjoy collaborating with people, sharing technical knowledge, and helping students grow through mentorship and guidance.",
   header_image_path: "experience.svg",
-
   sections: [
     {
       title: "Positions of Responsibility",
@@ -402,7 +439,6 @@ const contactPageData = {
     description:
       "I'm always open to discussing software development, full-stack development, problem solving and interesting technical projects. Feel free to connect with me through LinkedIn or GitHub.",
   },
-
   addressSection: {
     title: "Location",
     subtitle: "IIIT Bhagalpur",
@@ -414,7 +450,6 @@ const contactPageData = {
     avatar_image_path: "address_image.svg",
     location_map_link: "https://maps.google.com/",
   },
-
   phoneSection: {
     title: "Email",
     subtitle: "kumarnuiiitbh@gmail.com",
