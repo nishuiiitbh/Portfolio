@@ -17,16 +17,20 @@ A modern, responsive personal portfolio website built with **React.js**, showcas
 
 ## 🛠️ Tech Stack
 
+## 🛠️ Tech Stack
+
 | Category | Technologies |
 |---|---|
-| Frontend | React.js, HTML, CSS, JavaScript |
-| Programming Languages | C, C++, Python, JavaScript |
-| Backend | Node.js, Express.js |
-| Database | MongoDB, MySQL |
-| Authentication | JWT |
-| Real-time Communication | Socket.io |
-| Tools | Git, GitHub, VS Code |
+| Frontend Framework | React.js |
+| Programming Language | JavaScript (ES6+) |
+| Markup | HTML5 |
+| Styling | CSS3 |
+| UI Development | React Components, Responsive Design |
+| Package Management | npm |
+| Build Tool | Create React App (react-scripts) |
+| Version Control | Git, GitHub |
 | Deployment | Render |
+
 
 ## 📁 Project Structure
 
