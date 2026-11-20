@@ -1,6 +1,8 @@
+
 const settings = {
   isSplash: false,
 };
+
 const seo = {
   title: "Nishu Kumari | Software Engineer",
   description:
@@ -18,7 +20,8 @@ const greeting = {
   logo_name: "NishuKumari",
   subTitle:
     "Electronics and Communication Engineering student at IIIT Bhagalpur, passionate about building full-stack applications, scalable web solutions, and solving problems through technology.",
-  resume_link: "https://drive.google.com/file/d/1R8eN4pEOq7pRM3kQ_RTeo0za7z9tvxgw/view?usp=sharing",
+  resume_link:
+    "https://drive.google.com/file/d/1R8eN4pEOq7pRM3kQ_RTeo0za7z9tvxgw/view?usp=sharing",
   portfolio_repository: "",
   githubProfile: "https://github.com/nishuiiitbh",
 };
@@ -38,7 +41,7 @@ const socialMediaLinks = [
   },
   {
     name: "Gmail",
-    link: "mailto:kumarnishuiiitbh@gmail.com",
+    link: "mailto:kumarnuiiitbh@gmail.com",
     fontAwesomeIcon: "fa-envelope",
     iconType: "fas",
     backgroundColor: "#EA4335",
@@ -49,25 +52,47 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Frontend Development",
+      title: "Languages",
       fileName: "ProgrammingImg",
       skills: [
-        "⚡ Building responsive and interactive web applications using React.js",
-        "⚡ Developing user interfaces using HTML5, CSS3 and JavaScript",
-        "⚡ Creating reusable components and managing application state",
-        "⚡ Working with Tailwind CSS and Redux Toolkit",
-        "⚡ Integrating REST APIs with frontend applications",
+        "⚡ Working with C and C++ programming languages",
+        "⚡ Writing JavaScript code using modern ES6+ features",
+        "⚡ Understanding SQL queries and database operations",
       ],
       softwareSkills: [
         {
-          skillName: "React",
-          fontAwesomeClassname: "simple-icons:react",
-          style: { color: "#61DAFB" },
+          skillName: "C",
+          fontAwesomeClassname: "simple-icons:c",
+          style: { color: "#A8B9CC" },
+        },
+        {
+          skillName: "C++",
+          fontAwesomeClassname: "simple-icons:cplusplus",
+          style: { color: "#00599C" },
         },
         {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
           style: { color: "#F7DF1E" },
+        },
+      ],
+    },
+
+    {
+      title: "Frontend",
+      fileName: "ProgrammingImg",
+      skills: [
+        "⚡ Building responsive user interfaces using React.js",
+        "⚡ Developing web pages using HTML5 and CSS3",
+        "⚡ Styling applications using Tailwind CSS",
+        "⚡ Managing application state using Redux Toolkit",
+        "⚡ Implementing responsive web design and REST API integration",
+      ],
+      softwareSkills: [
+        {
+          skillName: "React.js",
+          fontAwesomeClassname: "simple-icons:react",
+          style: { color: "#61DAFB" },
         },
         {
           skillName: "HTML5",
@@ -84,19 +109,23 @@ const skills = {
           fontAwesomeClassname: "simple-icons:tailwindcss",
           style: { color: "#06B6D4" },
         },
+        {
+          skillName: "Redux Toolkit",
+          fontAwesomeClassname: "simple-icons:redux",
+          style: { color: "#764ABC" },
+        },
       ],
     },
 
     {
-      title: "Backend Development",
+      title: "Backend",
       fileName: "BackendImg",
       skills: [
-        "⚡ Building RESTful APIs using Node.js and Express.js",
+        "⚡ Building backend applications using Node.js and Express.js",
+        "⚡ Developing RESTful APIs",
+        "⚡ Working with Mongoose for MongoDB operations",
         "⚡ Implementing JWT-based authentication and authorization",
-        "⚡ Working with MongoDB and Mongoose for database management",
         "⚡ Developing real-time applications using Socket.io",
-        "⚡ Handling image uploads using Cloudinary and Multer",
-        "⚡ Integrating Firebase authentication and third-party services",
       ],
       softwareSkills: [
         {
@@ -119,40 +148,35 @@ const skills = {
           fontAwesomeClassname: "simple-icons:socketdotio",
           style: { color: "#010101" },
         },
+      ],
+    },
+
+    {
+      title: "Databases",
+      fileName: "DatabaseImg",
+      skills: [
+        "⚡ Working with MongoDB for database management",
+        "⚡ Designing and organizing database structures",
+        "⚡ Performing Create, Read, Update and Delete (CRUD) operations",
+      ],
+      softwareSkills: [
         {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: { color: "#FFCA28" },
+          skillName: "MongoDB",
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: { color: "#47A248" },
         },
       ],
     },
 
     {
-      title: "Programming & Computer Science",
-      fileName: "ProgrammingImg",
+      title: "Cloud and DevOps",
+      fileName: "CloudImg",
       skills: [
-        "⚡ Solving Data Structures and Algorithms problems using C++",
-        "⚡ Strong understanding of Object-Oriented Programming",
-        "⚡ Working with C, C++, Python and JavaScript",
-        "⚡ Understanding DBMS and Operating System fundamentals",
-        "⚡ Practicing competitive programming and problem solving",
+        "⚡ Managing code repositories using Git",
+        "⚡ Collaborating and maintaining projects on GitHub",
+        "⚡ Deploying web applications using Render",
       ],
       softwareSkills: [
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: { color: "#A8B9CC" },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: { color: "#00599C" },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "simple-icons:python",
-          style: { color: "#3776AB" },
-        },
         {
           skillName: "Git",
           fontAwesomeClassname: "simple-icons:git",
@@ -163,7 +187,70 @@ const skills = {
           fontAwesomeClassname: "simple-icons:github",
           style: { color: "#181717" },
         },
+        {
+          skillName: "Render",
+          fontAwesomeClassname: "simple-icons:render",
+          style: { color: "#46E3B7" },
+        },
       ],
+    },
+
+    {
+      title: "Tools and Integrations",
+      fileName: "ToolsImg",
+      skills: [
+        "⚡ Writing and managing code using Visual Studio Code",
+        "⚡ Testing APIs using Postman",
+        "⚡ Managing media uploads using Cloudinary",
+        "⚡ Integrating Firebase services into applications",
+      ],
+      softwareSkills: [
+        {
+          skillName: "VS Code",
+          fontAwesomeClassname: "simple-icons:visualstudiocode",
+          style: { color: "#007ACC" },
+        },
+        {
+          skillName: "Postman",
+          fontAwesomeClassname: "simple-icons:postman",
+          style: { color: "#FF6C37" },
+        },
+        {
+          skillName: "Cloudinary",
+          fontAwesomeClassname: "simple-icons:cloudinary",
+          style: { color: "#3448C5" },
+        },
+        {
+          skillName: "Firebase",
+          fontAwesomeClassname: "simple-icons:firebase",
+          style: { color: "#FFCA28" },
+        },
+      ],
+    },
+
+    {
+      title: "CS Fundamentals",
+      fileName: "ProgrammingImg",
+      skills: [
+        "⚡ Data Structures and Algorithms",
+        "⚡ Object-Oriented Programming",
+        "⚡ Database Management Systems (DBMS)",
+        "⚡ Operating System fundamentals",
+      ],
+      softwareSkills: [],
+    },
+
+    {
+      title: "Professional Skills",
+      fileName: "ProgrammingImg",
+      skills: [
+        "⚡ Team Collaboration",
+        "⚡ Problem Solving",
+        "⚡ Leadership",
+        "⚡ Mentoring",
+        "⚡ Time Management",
+      ],
+      softwareSkills: [],
     },
   ],
 };
@@ -322,7 +409,7 @@ const contactPageData = {
     locality: "Bhagalpur",
     country: "India",
     region: "Bihar",
-    postalCode: "812007",
+    postalCode: "813210",
     streetAddress: "Indian Institute of Information Technology Bhagalpur",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://maps.google.com/",
@@ -330,7 +417,7 @@ const contactPageData = {
 
   phoneSection: {
     title: "Email",
-    subtitle: "kumarnishuiiitbh@gmail.com",
+    subtitle: "kumarnuiiitbh@gmail.com",
   },
 };
 
