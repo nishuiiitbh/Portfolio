@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import Header from "../../components/header/Header";
 import Greeting from "../../containers/greeting/Greeting";
 import Skills from "../../containers/skills/Skills";
-import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import BackgroundVectors from "../../components/backgroundVectors/BackgroundVectors";
 
@@ -60,7 +59,6 @@ class Home extends Component {
         {/* Resume Section */}
         <ResumePage theme={theme} isSection={true} />
 
-        <Footer theme={theme} />
         <TopButton theme={theme} />
       </div>
     );
